@@ -9,6 +9,8 @@ Insane Data Representation
 * Every literal follows an escape character. A pair of escape characters make a literal character.
 
 ## Example
+| effect | character |
+|--------|-----------|
 | escape | \ |
 | delimiter 1 | new line (\n) |
 | delimiter 2 | : |
