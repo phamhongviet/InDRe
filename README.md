@@ -9,6 +9,8 @@ Insane Data Representation
 * Every literal follows an escape character. A pair of escape characters make a literal character.
 
 ## Example
+Max level of delimiters: 5
+
 | effect | character |
 |--------|-----------|
 | escape | \ |
@@ -42,4 +44,18 @@ Insane Data Representation
 ListOne:i1=i2=i3
 ListTwo:i4=i5
 Dict:this+that=these+those
+```
+
+```yaml
+---
+keys:
+- "ABC::DEF=5+3-2"
+- "XYZ\0123"
+locks:
+- "dGhpcyBpcyBhd2Vzb21lCg=="
+```
+
+```indre
+keys:ABC\:\:DEF\=5\+3\-2=XYZ\\0123
+locks:dGhpcyBpcyBhd2Vzb21lCg\=\=
 ```
