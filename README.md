@@ -1,9 +1,10 @@
 # InDRe
-Insane Data Representation
+Insane Data Representation.         
+The insanity of this is as high as its uselessness.
 
 ## Definition
 * Everything is a list.
-* Every list item is a string of characters.
+* Every list item is a list of characters (normal people call them strings).
 * There is no type of value. A value need to be parsed from a string of characters, with its type defined in somewhere else not within this scope.
 * There are multiple delimeters, only limitted by the number of unique characters.
 * Every literal follows an escape character. A pair of escape characters make a literal character.
